@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オモイダシ - 大切な考えを、いつでも思い出せる</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1565C0 0%, #1976D2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .hero {
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .app-badges {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .badge:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Main content */
+        main {
+            padding: 3rem 0;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #1565C0;
+            text-align: center;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1565C0;
+        }
+
+        .feature p {
+            color: #666;
+        }
+
+        /* Screenshots */
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .screenshot {
+            background: white;
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .screenshot img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #1565C0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .app-badges {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <h1>オモイダシ</h1>
+                <p>大切な考えを、いつでも思い出せる</p>
+                <div class="app-badges">
+                    <a href="#" class="badge">📱 App Store</a>
+                    <a href="#" class="badge">🤖 Google Play</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="section">
+                <h2>アプリについて</h2>
+                <p style="text-align: center; font-size: 1.1rem; color: #666; max-width: 800px; margin: 0 auto;">
+                    オモイダシは、学習者・研究者・クリエイターのための思考整理アプリです。<br>
+                    重要なアイデアやひらめきを記録し、タグで整理して、いつでも簡単に思い出すことができます。
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>主な機能</h2>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">📝</div>
+                        <h3>メモの作成・編集</h3>
+                        <p>思いついたアイデアをすぐに記録。シンプルで使いやすいインターフェース。</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🏷️</div>
+                        <h3>タグ機能</h3>
+                        <p>メモをタグで分類整理。関連する内容をまとめて管理できます。</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⭐</div>
+                        <h3>お気に入り</h3>
+                        <p>重要なメモをお気に入りに登録。優先度の高い情報にすぐアクセス。</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔍</div>
+                        <h3>検索・フィルター</h3>
+                        <p>キーワードやタグで素早く検索。必要な情報をすぐに見つけられます。</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🎲</div>
+                        <h3>ランダム表示</h3>
+                        <p>過去のメモをランダムに表示。忘れかけていたアイデアを再発見。</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔒</div>
+                        <h3>ローカル保存</h3>
+                        <p>データはすべてデバイス内に保存。プライバシーを重視した設計。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>スクリーンショット</h2>
+                <div class="screenshots">
+                    <div class="screenshot">
+                        <h4>ホーム画面</h4>
+                        <p>シンプルなリスト表示でメモを一覧</p>
+                    </div>
+                    <div class="screenshot">
+                        <h4>メモ作成</h4>
+                        <p>直感的な操作でメモを作成・編集</p>
+                    </div>
+                    <div class="screenshot">
+                        <h4>設定画面</h4>
+                        <p>アプリ情報や利用規約を確認</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>対象ユーザー</h2>
+                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <p style="font-size: 1.1rem; color: #666; margin-bottom: 1rem;">
+                        <strong>学習者</strong>：講義や読書で得た知識を整理<br>
+                        <strong>研究者</strong>：研究アイデアや仮説を記録<br>
+                        <strong>クリエイター</strong>：創作のひらめきを保存
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="terms.html">利用規約</a>
+                <a href="privacy.html">プライバシーポリシー</a>
+                <a href="mailto:support@omoidashi.app">お問い合わせ</a>
+            </div>
+            <p>&copy; 2025 オモイダシ. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
