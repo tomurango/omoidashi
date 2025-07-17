@@ -7,7 +7,7 @@ class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
 
   // 静的にアプリ情報を定義
-  static const String _appName = 'オモイダシ';
+  static const String _appName = 'リメンモー';
   static const String _version = '1.0.0';
   static const String _buildNumber = '1';
 
@@ -140,8 +140,8 @@ class SettingsScreen extends StatelessWidget {
   Future<void> _launchEmail(BuildContext context) async {
     final Uri emailUri = Uri(
       scheme: 'mailto',
-      path: 'support@omoidashi.app',
-      query: 'subject=オモイダシ - お問い合わせ&body=',
+      path: 'support@remenmemo.app',
+      query: 'subject=リメンモー - お問い合わせ&body=',
     );
     
     if (await canLaunchUrl(emailUri)) {

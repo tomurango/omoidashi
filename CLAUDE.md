@@ -1,8 +1,8 @@
-# オモイダシ (OMOIDASHI) - 開発メモ
+# リメンモー (REMENMEMO) - 開発メモ
 
 ## プロジェクト概要
-- **アプリ名**: オモイダシ - 思考整理メモ（OMOIDASHI）
-- **デバイス表示名**: オモイダシ
+- **アプリ名**: リメンモー - 思い出すメモアプリ（REMENMEMO）
+- **デバイス表示名**: リメンモー
 - **コンセプト**: 「大切な考えを、いつでも思い出せる」
 - **技術スタック**: Flutter + Riverpod + Hooks + ローカルJSON保存
 - **対象**: 学習者、研究者、クリエイター
@@ -199,11 +199,19 @@ flutter pub get
 
 ### App Store 名前重複問題の解決
 - **問題**: 「オモイダシ」が既にApp Storeで使用済み
-- **解決**: App Store表示名を「オモイダシ - 思考整理メモ」に変更
+- **1回目の対応**: App Store表示名を「オモイダシ - 思考整理メモ」に変更 → 失敗
+- **2回目の対応**: Bundle Identifier を `com.tomurango.omoidashi.memo` に変更 → 失敗
+- **最終対応**: アプリ名を「リメンモー - 思い出すメモアプリ」に完全変更
+
+### アプリ名変更 (2025-07-17)
+- **新アプリ名**: リメンモー - 思い出すメモアプリ
+- **新デバイス表示名**: リメンモー
+- **新Bundle ID**: com.tomurango.omoidashi.memo
+- **新メールアドレス**: support@remenmemo.app
 - **変更内容**:
-  - GitHub Pagesサイトのタイトル更新
-  - 利用規約・プライバシーポリシーページのタイトル統一
-  - デバイス表示名（CFBundleDisplayName）は「オモイダシ」のまま維持
+  - 全ての画面・ファイルのタイトル更新
+  - GitHub Pagesサイト全体の更新
+  - 利用規約・プライバシーポリシーの全面改訂
 
 ### iOS Archive ビルド問題の解決
 - CocoaPods設定の修正（platform :ios, '12.0' 有効化）
@@ -211,7 +219,7 @@ flutter pub get
 - Runner.xcworkspace の使用（Runner.xcodeproj ではない）
 
 ### 次回の作業項目
-1. App Store Connect で「オモイダシ - 思考整理メモ」でアプリ作成
+1. App Store Connect で「リメンモー - 思い出すメモアプリ」でアプリ作成
 2. アプリストア審査用スクリーンショット作成
 3. アプリ説明文・キーワード設定
 4. リリース申請
